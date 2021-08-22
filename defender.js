@@ -9,7 +9,7 @@ var bot = Mineflayer.createBot({
 })
 
 function chasePlayerAndDestroyHim() {
-    const playerFilter = (entity) => entity.type === "player" && entity.username != "schillo_" && entity.username != "zWhiteHell" && entity.username != "RektGirl" && entity.username != "farmer"
+    const playerFilter = (entity) => entity.type === "player" && entity.username != " "
     const playerEntity = bot.nearestEntity(playerFilter)
 
     if (!playerEntity) return
